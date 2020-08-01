@@ -2,6 +2,8 @@ package TestCase;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
@@ -30,10 +32,10 @@ public class FacebookSign {
 		/********   How to write data in excel  *******************************/
 		
 		
-//		sheet1.getRow(0).createCell(5).setCellValue("pass");
-//		FileOutputStream fout =new FileOutputStream(src);
-//		wb.write(fout);
-//		System.out.println("Data craetion sucessfull");
+		sheet1.getRow(0).createCell(5).setCellValue("pass");
+		FileOutputStream fout =new FileOutputStream(src);
+		wb.write(fout);
+		System.out.println("Data craetion sucessfull");
 //		
 		
 		
